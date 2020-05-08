@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VGSEO - SEO data page</title>
+    <link href="./css/style.css" rel='stylesheet' type="text/css">
+</head>
+<body>
+<div class="vg-page-comments" id="vg-page-comments">
+    <div class="vg-menu">
+        <a href="#" class="btnComment">Comments</a>
+        <a href="#" class="btnRegister" style="display: none;">Registration</a>
+        <a href="#" class="btnLogin" style="display: none;">Login</a>
+        <a href="#" class="btnExit" style="display: none;">Exit</a>
+        <span class="vg-online">Online: <span class="vg-online-count"></span></span>
+    </div>
+    <div id="chat-box"></div>
+    <form class="pageChat" method="post" enctype="multipart/form-data">
+        <input type="hidden" class="setType" name="type" value="">
+        <input type="hidden" class="setUrl" name="url" value="">
+        <input type="hidden" class="setToken" name="token" value="">
+        <div class="vg-pc-setLogin typeBlock" style="display: none;">
+            <input autocomplete="off" type="text" maxlength="255" name="nickname" placeholder="Nickname" class="inputNickname"/>
+            <input autocomplete="off" type="password" maxlength="255" name="password" placeholder="Password" class="inputPassword"/>
+        </div>
+        <div class="vg-pc-setRegister typeBlock" style="display: none;">
+            <input autocomplete="off" type="password" maxlength="255" name="password2" placeholder="Password" class="inputPassword2"/>
+        </div>
+        <div class="vg-pc-setComment typeBlock" style="display: none;">
+            <input autocomplete="off" type="text" maxlength="200" name="comment" placeholder="Comment" class="inputComment"/>
+        </div>
+            <input type="submit" name="send-chat-message" class="vg-pc-setBtnSend" value="Send" style="display: none;">
+    </form>
+</div>
+
+<script src="./js/popup.js"></script>
+</body>
+</html>
